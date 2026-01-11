@@ -1,229 +1,182 @@
 <!DOCTYPE html>
 <html lang="vi">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trading Lifecycle – Playbook</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Trading Lifecycle – Wyckoff Playbook</title>
 
   <style>
     body {
       margin: 0;
-      padding: 16px;
-      background-color: #0f1115;
-      color: #d6d6d6;
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
-      font-size: 14px;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background: #0e1117;
+      color: #e6edf3;
       line-height: 1.6;
     }
 
-    .card {
-      background-color: #151820;
+    .container {
+      max-width: 720px;
+      margin: auto;
+      padding: 16px;
+    }
+
+    .title-block {
+      border: 1px solid #30363d;
       border-radius: 10px;
-      margin-bottom: 16px;
-      overflow: hidden;
-      box-shadow: 0 0 0 1px #232634;
+      padding: 16px;
+      margin-bottom: 20px;
+      background: #161b22;
     }
 
-    .card-header {
-      background-color: #1c2030;
-      padding: 10px 14px;
-      border-bottom: 1px solid #2a2f45;
+    .title-block h1 {
+      font-size: 20px;
+      margin: 0 0 8px 0;
+      color: #f0f6fc;
     }
 
-    .card-header h2 {
-      margin: 0;
+    .title-block p {
       font-size: 14px;
-      font-weight: 600;
-      color: #ffffff;
+      color: #8b949e;
+      margin: 0;
     }
 
-    .card-body {
-      padding: 12px 14px;
+    .card {
+      background: #161b22;
+      border: 1px solid #30363d;
+      border-radius: 12px;
+      padding: 16px;
+      margin-bottom: 16px;
+    }
+
+    .card h2 {
+      font-size: 16px;
+      margin: 0 0 10px 0;
+      color: #58a6ff;
+    }
+
+    .card p, .card li {
+      font-size: 14px;
+      color: #c9d1d9;
     }
 
     ul {
       padding-left: 18px;
-      margin: 8px 0;
     }
 
-    li {
-      margin-bottom: 6px;
-    }
-
-    .note {
-      background-color: #10131a;
-      border-left: 3px solid #3a6df0;
-      padding: 8px 10px;
+    .quote {
+      font-style: italic;
+      color: #9da7b3;
+      border-left: 3px solid #58a6ff;
+      padding-left: 12px;
       margin-top: 10px;
-      font-size: 13px;
-      color: #c9d1ff;
     }
 
-    .intro {
-      font-size: 13px;
-      color: #b3b3b3;
-    }
-
-    .footer {
-      text-align: center;
-      font-size: 12px;
-      color: #888;
-      margin-top: 24px;
-    }
-
-    /* Playbook Header */
-    .playbook {
-      border-left: 4px solid #3a6df0;
-    }
-
-    .playbook h1 {
-      margin: 0;
-      font-size: 18px;
-      font-weight: 600;
-      color: #ffffff;
-    }
-
-    .subtitle {
-      margin: 6px 0 0;
-      font-size: 13px;
-      color: #aab1ff;
-    }
-
-    .tagline {
-      margin-top: 8px;
-      font-size: 13px;
-      color: #b5b5b5;
+    .divider {
+      height: 1px;
+      background: #30363d;
+      margin: 24px 0;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
 
-<!-- PLAYBOOK TITLE -->
-<div class="card playbook">
-  <div class="card-body">
-    <h1>Trading Lifecycle</h1>
-    <p class="subtitle">
-      Playbook giao dịch theo pha thị trường, không theo tín hiệu.
-    </p>
-    <p class="tagline">
-      Dựa trên cấu trúc thị trường Wyckoff và khai thác động lượng.
-    </p>
-  </div>
-</div>
-  
-<!-- PHASE 0 -->
-<div class="card">
-  <div class="card-header">
-    <h2>Phase 0 – Nguyên lý cốt lõi</h2>
-  </div>
-  <div class="card-body">
-    <ul>
-      <li>Thị trường vận hành theo chu kỳ Markup → Markdown.</li>
-      <li>Mỗi công cụ chỉ hiệu quả trong một pha nhất định.</li>
-      <li>Kiên nhẫn là chi phí để có sự chắc chắn.</li>
-    </ul>
-  </div>
-</div>
-
-<!-- PHASE 1 -->
-<div class="card">
-  <div class="card-header">
-    <h2>Phase 1 – Kết thúc Markup (TR5)</h2>
-  </div>
-  <div class="card-body">
-    <ul>
-      <li>Xu hướng tăng suy yếu.</li>
-      <li>MD Pullback mất hiệu quả.</li>
-      <li>Giá đi ngang, phân phối.</li>
-    </ul>
-    <div class="note">
-      Hành động: Giảm trade, chốt dần vị thế, không mở lệnh mới.
+    <!-- TITLE -->
+    <div class="title-block">
+      <h1>Trading Lifecycle – Wyckoff Playbook</h1>
+      <p>Giao dịch như Composite Operator, không như trader phản xạ</p>
     </div>
-  </div>
-</div>
 
-<!-- PHASE 2 -->
-<div class="card">
-  <div class="card-header">
-    <h2>Phase 2 – Markdown (TR1 → TR5)</h2>
-  </div>
-  <div class="card-body">
-    <ul>
-      <li>Chuỗi breakdown rõ ràng.</li>
-      <li>Mỗi Trading Range phục vụ breakdown tiếp theo.</li>
-      <li>Không áp dụng MD Pullback.</li>
-    </ul>
-    <div class="note">
-      Nguyên tắc: Không bắt đáy, không gom sớm.
+    <!-- OVERVIEW -->
+    <div class="card">
+      <h2>1️⃣ Trading Lifecycle là gì?</h2>
+      <p>
+        Trading Lifecycle không tập trung vào việc “bắt mọi con sóng”,  
+        mà tập trung vào <b>tham gia đúng pha – đúng vai – đúng thời điểm</b>.
+      </p>
+      <p>
+        Trọng tâm của Lifecycle là:
+        <b>Markup bền – Markdown chịu đựng – Accumulation có chủ đích</b>.
+      </p>
     </div>
-  </div>
-</div>
 
-<!-- PHASE 3 -->
-<div class="card">
-  <div class="card-header">
-    <h2>Phase 3 – TR5 Markdown (Stopping Action)</h2>
-  </div>
-  <div class="card-body">
-    <ul>
-      <li>Markdown đã hoàn chỉnh ≥ 5 Trading Range.</li>
-      <li>TR5 kéo dài thời gian vượt trội.</li>
-      <li>Giá test đáy nhưng không tạo Lower Low.</li>
-    </ul>
-    <div class="note">
-      Hành động: Có thể rải lệnh mua nhỏ khi test đáy range.
+    <div class="divider"></div>
+
+    <!-- CORE PHILOSOPHY -->
+    <div class="card">
+      <h2>2️⃣ Vì sao KHÔNG Short trong Markdown?</h2>
+      <p>
+        Short (bán khống) trong Markdown <b>không đối xứng</b> với Long (mua) trong Markup,
+        dù nhìn bề ngoài có vẻ “giống nhau”.
+      </p>
+      <p>
+        Markdown là pha:
+      </p>
+      <ul>
+        <li>Giá rơi vì <b>hoảng loạn & forced selling</b></li>
+        <li>Không có ai bảo vệ giá phía dưới</li>
+        <li>Các cú hồi là để <b>xả tiếp</b>, không phải để xây nền</li>
+      </ul>
+      <p>
+        Short trong Markdown là <b>đuổi theo thứ đã xảy ra</b>,
+        rủi ro cao và không tạo giá trị dài hạn.
+      </p>
     </div>
-  </div>
-</div>
 
-<!-- PHASE 4 -->
-<div class="card">
-  <div class="card-header">
-    <h2>Phase 4 – Xác nhận Markup (SOS → LPS)</h2>
-  </div>
-  <div class="card-body">
-    <ul>
-      <li>Xuất hiện Sign of Strength (SOS).</li>
-      <li>Pullback tạo Last Point of Support (LPS).</li>
-      <li>Cấu trúc tăng được xác nhận.</li>
-    </ul>
-  </div>
-</div>
-
-<!-- PHASE 5 -->
-<div class="card">
-  <div class="card-header">
-    <h2>Phase 5 – Khai thác Markup (MD Pullback)</h2>
-  </div>
-  <div class="card-body">
-    <ul>
-      <li>Trade theo momentum.</li>
-      <li>Không dự đoán đỉnh đáy.</li>
-      <li>Khai thác xu hướng cho đến khi suy yếu.</li>
-    </ul>
-  </div>
-</div>
-
-<!-- PHASE 6 -->
-<div class="card">
-  <div class="card-header">
-    <h2>Phase 6 – TR5 Markup → Nghỉ</h2>
-  </div>
-  <div class="card-body">
-    <ul>
-      <li>Xu hướng tăng mất động lượng.</li>
-      <li>Giá đi ngang, chuẩn bị phân phối.</li>
-    </ul>
-    <div class="note">
-      Hành động: Thoát dần vị thế, nghỉ ngơi chờ chu kỳ mới.
+    <div class="card">
+      <h2>3️⃣ Vì sao CHỈ Long trong Markup?</h2>
+      <p>
+        Markup là pha:
+      </p>
+      <ul>
+        <li>Giá đã được gom xong</li>
+        <li>Có Composite Operator đứng sau bảo vệ cấu trúc</li>
+        <li>Các nhịp điều chỉnh là <b>pullback có trật tự</b></li>
+      </ul>
+      <p>
+        Long trong Markup là:
+        <b>đi cùng trạng thái cân bằng mới của thị trường</b>,
+        cho phép giữ lệnh dài và sửa sai.
+      </p>
     </div>
+
+    <div class="divider"></div>
+
+    <!-- TR5 LOGIC -->
+    <div class="card">
+      <h2>4️⃣ Vai trò của TR5 trong Markdown</h2>
+      <p>
+        Composite Operator không short Markdown.
+        Họ <b>chịu đựng Markdown</b> và chỉ hành động khi:
+      </p>
+      <ul>
+        <li>Markdown đã đủ <b>5 Trading Range</b></li>
+        <li>TR5 kéo dài, phi xu hướng</li>
+        <li>Supply cạn dần, downside không follow-through</li>
+      </ul>
+      <p>
+        TR5 là nơi:
+        <b>rải lệnh nhỏ – sai cũng không chết – chuẩn bị cho Markup</b>.
+      </p>
+    </div>
+
+    <div class="divider"></div>
+
+    <!-- FINAL PHILOSOPHY -->
+    <div class="card">
+      <h2>5️⃣ Triết lý cốt lõi</h2>
+      <div class="quote">
+        “Short trong Markdown là tận dụng sự sụp đổ.  
+        Long trong Markup là hưởng lợi từ sự ổn định mới.”
+      </div>
+      <p>
+        Trading Lifecycle không dành cho người vội vàng,
+        mà dành cho người chấp nhận:
+        <b>kiên nhẫn để có khởi đầu chắc chắn</b>.
+      </p>
+    </div>
+
   </div>
-</div>
-
-<div class="footer">
-  Trading Lifecycle • Playbook theo chu kỳ Wyckoff
-</div>
-
 </body>
 </html>
